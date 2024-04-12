@@ -19200,3 +19200,368 @@ SELECT * from AVERAGE_PROFICIENCY_LEVEL
 [0m18:24:57.530774 [debug] [MainThread]: Command `dbt run` succeeded at 18:24:57.529776 after 17.73 seconds
 [0m18:24:57.532765 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016241AA98A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016255869D80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001624466FFA0>]}
 [0m18:24:57.533762 [debug] [MainThread]: Flushing usage events
+[0m10:04:33.258592 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001517127E170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015173AF4550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015173AF75B0>]}
+
+
+============================== 10:04:33.265594 | 8a87dbc5-4be5-458a-8daf-8f7481e16ca8 ==============================
+[0m10:04:33.265594 [info ] [MainThread]: Running with dbt=1.7.11
+[0m10:04:33.267593 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\RuthvikS\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\RuthvikS\\Downloads\\ruthvik_dbt\\ruthvik_dbt\\Jman_Final_Project_DBT\\ruth_dbt\\logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt docs generate', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:04:36.889334 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8a87dbc5-4be5-458a-8daf-8f7481e16ca8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015173AA7850>]}
+[0m10:04:37.019333 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8a87dbc5-4be5-458a-8daf-8f7481e16ca8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001517C39AE90>]}
+[0m10:04:37.021335 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m10:04:37.043335 [debug] [MainThread]: checksum: 1b58ec263fbd34ee8091684d6a2f6c1ad2902b1459e632a74eb63768af36ddb7, vars: {}, profile: , target: , version: 1.7.11
+[0m10:04:37.072335 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m10:04:37.073336 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '8a87dbc5-4be5-458a-8daf-8f7481e16ca8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001517C358430>]}
+[0m10:04:39.919335 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- seeds.training
+[0m10:04:39.926336 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8a87dbc5-4be5-458a-8daf-8f7481e16ca8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001517C801390>]}
+[0m10:04:39.932336 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8a87dbc5-4be5-458a-8daf-8f7481e16ca8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001517C74A290>]}
+[0m10:04:39.933336 [info ] [MainThread]: Found 10 models, 4 sources, 0 exposures, 0 metrics, 430 macros, 0 groups, 0 semantic models
+[0m10:04:39.934337 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8a87dbc5-4be5-458a-8daf-8f7481e16ca8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001517C6DBE20>]}
+[0m10:04:39.937338 [info ] [MainThread]: 
+[0m10:04:39.939338 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m10:04:39.954337 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_JMAN_FINAL_PROJECT_PUBLIC_staging'
+[0m10:04:39.980337 [debug] [ThreadPool]: Using snowflake connection "list_JMAN_FINAL_PROJECT_PUBLIC_staging"
+[0m10:04:39.981340 [debug] [ThreadPool]: On list_JMAN_FINAL_PROJECT_PUBLIC_staging: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "ruth_dbt", "target_name": "dev", "connection_name": "list_JMAN_FINAL_PROJECT_PUBLIC_staging"} */
+show terse objects in JMAN_FINAL_PROJECT.PUBLIC_staging limit 10000
+[0m10:04:39.982338 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:04:42.296335 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 2.0 seconds
+[0m10:04:42.298336 [debug] [ThreadPool]: On list_JMAN_FINAL_PROJECT_PUBLIC_staging: Close
+[0m10:04:42.398335 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_JMAN_FINAL_PROJECT_PUBLIC_staging, now list_JMAN_FINAL_PROJECT_PUBLIC_mart)
+[0m10:04:42.405336 [debug] [ThreadPool]: Using snowflake connection "list_JMAN_FINAL_PROJECT_PUBLIC_mart"
+[0m10:04:42.406337 [debug] [ThreadPool]: On list_JMAN_FINAL_PROJECT_PUBLIC_mart: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "ruth_dbt", "target_name": "dev", "connection_name": "list_JMAN_FINAL_PROJECT_PUBLIC_mart"} */
+show terse objects in JMAN_FINAL_PROJECT.PUBLIC_mart limit 10000
+[0m10:04:42.406337 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:04:46.549935 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 4.0 seconds
+[0m10:04:46.551935 [debug] [ThreadPool]: On list_JMAN_FINAL_PROJECT_PUBLIC_mart: Close
+[0m10:04:46.909935 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8a87dbc5-4be5-458a-8daf-8f7481e16ca8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001517C8016C0>]}
+[0m10:04:46.910933 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m10:04:46.911933 [info ] [MainThread]: 
+[0m10:04:46.949936 [debug] [Thread-1 (]: Began running node model.ruth_dbt.stg_projects
+[0m10:04:46.951934 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.ruth_dbt.stg_projects'
+[0m10:04:46.952935 [debug] [Thread-1 (]: Began compiling node model.ruth_dbt.stg_projects
+[0m10:04:46.966937 [debug] [Thread-1 (]: Writing injected SQL for node "model.ruth_dbt.stg_projects"
+[0m10:04:46.968937 [debug] [Thread-1 (]: Timing info for model.ruth_dbt.stg_projects (compile): 10:04:46.953936 => 10:04:46.968937
+[0m10:04:46.969935 [debug] [Thread-1 (]: Began executing node model.ruth_dbt.stg_projects
+[0m10:04:46.970933 [debug] [Thread-1 (]: Timing info for model.ruth_dbt.stg_projects (execute): 10:04:46.970933 => 10:04:46.970933
+[0m10:04:46.973942 [debug] [Thread-1 (]: Finished running node model.ruth_dbt.stg_projects
+[0m10:04:46.974932 [debug] [Thread-1 (]: Began running node model.ruth_dbt.stg_user_projects
+[0m10:04:46.975933 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ruth_dbt.stg_projects, now model.ruth_dbt.stg_user_projects)
+[0m10:04:46.976933 [debug] [Thread-1 (]: Began compiling node model.ruth_dbt.stg_user_projects
+[0m10:04:46.982935 [debug] [Thread-1 (]: Writing injected SQL for node "model.ruth_dbt.stg_user_projects"
+[0m10:04:46.983933 [debug] [Thread-1 (]: Timing info for model.ruth_dbt.stg_user_projects (compile): 10:04:46.976933 => 10:04:46.983933
+[0m10:04:46.984935 [debug] [Thread-1 (]: Began executing node model.ruth_dbt.stg_user_projects
+[0m10:04:46.985934 [debug] [Thread-1 (]: Timing info for model.ruth_dbt.stg_user_projects (execute): 10:04:46.985934 => 10:04:46.985934
+[0m10:04:46.987933 [debug] [Thread-1 (]: Finished running node model.ruth_dbt.stg_user_projects
+[0m10:04:46.988932 [debug] [Thread-1 (]: Began running node model.ruth_dbt.stg_user_skills
+[0m10:04:46.990937 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ruth_dbt.stg_user_projects, now model.ruth_dbt.stg_user_skills)
+[0m10:04:46.990937 [debug] [Thread-1 (]: Began compiling node model.ruth_dbt.stg_user_skills
+[0m10:04:46.995934 [debug] [Thread-1 (]: Writing injected SQL for node "model.ruth_dbt.stg_user_skills"
+[0m10:04:46.997934 [debug] [Thread-1 (]: Timing info for model.ruth_dbt.stg_user_skills (compile): 10:04:46.991934 => 10:04:46.996933
+[0m10:04:46.998934 [debug] [Thread-1 (]: Began executing node model.ruth_dbt.stg_user_skills
+[0m10:04:46.999941 [debug] [Thread-1 (]: Timing info for model.ruth_dbt.stg_user_skills (execute): 10:04:46.998934 => 10:04:46.998934
+[0m10:04:47.000933 [debug] [Thread-1 (]: Finished running node model.ruth_dbt.stg_user_skills
+[0m10:04:47.001934 [debug] [Thread-1 (]: Began running node model.ruth_dbt.stg_users
+[0m10:04:47.003935 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ruth_dbt.stg_user_skills, now model.ruth_dbt.stg_users)
+[0m10:04:47.004936 [debug] [Thread-1 (]: Began compiling node model.ruth_dbt.stg_users
+[0m10:04:47.009933 [debug] [Thread-1 (]: Writing injected SQL for node "model.ruth_dbt.stg_users"
+[0m10:04:47.010933 [debug] [Thread-1 (]: Timing info for model.ruth_dbt.stg_users (compile): 10:04:47.004936 => 10:04:47.010933
+[0m10:04:47.011934 [debug] [Thread-1 (]: Began executing node model.ruth_dbt.stg_users
+[0m10:04:47.012934 [debug] [Thread-1 (]: Timing info for model.ruth_dbt.stg_users (execute): 10:04:47.011934 => 10:04:47.011934
+[0m10:04:47.013933 [debug] [Thread-1 (]: Finished running node model.ruth_dbt.stg_users
+[0m10:04:47.014933 [debug] [Thread-1 (]: Began running node model.ruth_dbt.largest_project_teams
+[0m10:04:47.015933 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ruth_dbt.stg_users, now model.ruth_dbt.largest_project_teams)
+[0m10:04:47.016933 [debug] [Thread-1 (]: Began compiling node model.ruth_dbt.largest_project_teams
+[0m10:04:47.021932 [debug] [Thread-1 (]: Writing injected SQL for node "model.ruth_dbt.largest_project_teams"
+[0m10:04:47.023933 [debug] [Thread-1 (]: Timing info for model.ruth_dbt.largest_project_teams (compile): 10:04:47.017933 => 10:04:47.023933
+[0m10:04:47.024933 [debug] [Thread-1 (]: Began executing node model.ruth_dbt.largest_project_teams
+[0m10:04:47.025932 [debug] [Thread-1 (]: Timing info for model.ruth_dbt.largest_project_teams (execute): 10:04:47.025932 => 10:04:47.025932
+[0m10:04:47.027932 [debug] [Thread-1 (]: Finished running node model.ruth_dbt.largest_project_teams
+[0m10:04:47.028932 [debug] [Thread-1 (]: Began running node model.ruth_dbt.most_common_skill
+[0m10:04:47.029934 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ruth_dbt.largest_project_teams, now model.ruth_dbt.most_common_skill)
+[0m10:04:47.029934 [debug] [Thread-1 (]: Began compiling node model.ruth_dbt.most_common_skill
+[0m10:04:47.034933 [debug] [Thread-1 (]: Writing injected SQL for node "model.ruth_dbt.most_common_skill"
+[0m10:04:47.035934 [debug] [Thread-1 (]: Timing info for model.ruth_dbt.most_common_skill (compile): 10:04:47.030934 => 10:04:47.035934
+[0m10:04:47.036933 [debug] [Thread-1 (]: Began executing node model.ruth_dbt.most_common_skill
+[0m10:04:47.037933 [debug] [Thread-1 (]: Timing info for model.ruth_dbt.most_common_skill (execute): 10:04:47.037933 => 10:04:47.037933
+[0m10:04:47.039936 [debug] [Thread-1 (]: Finished running node model.ruth_dbt.most_common_skill
+[0m10:04:47.040932 [debug] [Thread-1 (]: Began running node model.ruth_dbt.most_experienced_person
+[0m10:04:47.041933 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ruth_dbt.most_common_skill, now model.ruth_dbt.most_experienced_person)
+[0m10:04:47.042933 [debug] [Thread-1 (]: Began compiling node model.ruth_dbt.most_experienced_person
+[0m10:04:47.048932 [debug] [Thread-1 (]: Writing injected SQL for node "model.ruth_dbt.most_experienced_person"
+[0m10:04:47.049933 [debug] [Thread-1 (]: Timing info for model.ruth_dbt.most_experienced_person (compile): 10:04:47.042933 => 10:04:47.049933
+[0m10:04:47.051933 [debug] [Thread-1 (]: Began executing node model.ruth_dbt.most_experienced_person
+[0m10:04:47.052932 [debug] [Thread-1 (]: Timing info for model.ruth_dbt.most_experienced_person (execute): 10:04:47.052932 => 10:04:47.052932
+[0m10:04:47.053933 [debug] [Thread-1 (]: Finished running node model.ruth_dbt.most_experienced_person
+[0m10:04:47.054933 [debug] [Thread-1 (]: Began running node model.ruth_dbt.most_skilled_user
+[0m10:04:47.055933 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ruth_dbt.most_experienced_person, now model.ruth_dbt.most_skilled_user)
+[0m10:04:47.056933 [debug] [Thread-1 (]: Began compiling node model.ruth_dbt.most_skilled_user
+[0m10:04:47.061932 [debug] [Thread-1 (]: Writing injected SQL for node "model.ruth_dbt.most_skilled_user"
+[0m10:04:47.062933 [debug] [Thread-1 (]: Timing info for model.ruth_dbt.most_skilled_user (compile): 10:04:47.057933 => 10:04:47.062933
+[0m10:04:47.063933 [debug] [Thread-1 (]: Began executing node model.ruth_dbt.most_skilled_user
+[0m10:04:47.064933 [debug] [Thread-1 (]: Timing info for model.ruth_dbt.most_skilled_user (execute): 10:04:47.064933 => 10:04:47.064933
+[0m10:04:47.066932 [debug] [Thread-1 (]: Finished running node model.ruth_dbt.most_skilled_user
+[0m10:04:47.067932 [debug] [Thread-1 (]: Began running node model.ruth_dbt.user_most_rejected_skills
+[0m10:04:47.068932 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ruth_dbt.most_skilled_user, now model.ruth_dbt.user_most_rejected_skills)
+[0m10:04:47.069932 [debug] [Thread-1 (]: Began compiling node model.ruth_dbt.user_most_rejected_skills
+[0m10:04:47.073932 [debug] [Thread-1 (]: Writing injected SQL for node "model.ruth_dbt.user_most_rejected_skills"
+[0m10:04:47.075934 [debug] [Thread-1 (]: Timing info for model.ruth_dbt.user_most_rejected_skills (compile): 10:04:47.069932 => 10:04:47.075934
+[0m10:04:47.076934 [debug] [Thread-1 (]: Began executing node model.ruth_dbt.user_most_rejected_skills
+[0m10:04:47.077933 [debug] [Thread-1 (]: Timing info for model.ruth_dbt.user_most_rejected_skills (execute): 10:04:47.077933 => 10:04:47.077933
+[0m10:04:47.078934 [debug] [Thread-1 (]: Finished running node model.ruth_dbt.user_most_rejected_skills
+[0m10:04:47.079934 [debug] [Thread-1 (]: Began running node model.ruth_dbt.user_skill_proficiency
+[0m10:04:47.081932 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ruth_dbt.user_most_rejected_skills, now model.ruth_dbt.user_skill_proficiency)
+[0m10:04:47.082933 [debug] [Thread-1 (]: Began compiling node model.ruth_dbt.user_skill_proficiency
+[0m10:04:47.087934 [debug] [Thread-1 (]: Writing injected SQL for node "model.ruth_dbt.user_skill_proficiency"
+[0m10:04:47.090933 [debug] [Thread-1 (]: Timing info for model.ruth_dbt.user_skill_proficiency (compile): 10:04:47.082933 => 10:04:47.089934
+[0m10:04:47.091935 [debug] [Thread-1 (]: Began executing node model.ruth_dbt.user_skill_proficiency
+[0m10:04:47.092934 [debug] [Thread-1 (]: Timing info for model.ruth_dbt.user_skill_proficiency (execute): 10:04:47.091935 => 10:04:47.091935
+[0m10:04:47.093935 [debug] [Thread-1 (]: Finished running node model.ruth_dbt.user_skill_proficiency
+[0m10:04:47.095935 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:04:47.096934 [debug] [MainThread]: Connection 'list_JMAN_FINAL_PROJECT_PUBLIC_mart' was properly closed.
+[0m10:04:47.097933 [debug] [MainThread]: Connection 'model.ruth_dbt.user_skill_proficiency' was properly closed.
+[0m10:04:47.100933 [debug] [MainThread]: Command end result
+[0m10:04:47.342935 [debug] [MainThread]: Acquiring new snowflake connection 'generate_catalog'
+[0m10:04:47.343933 [info ] [MainThread]: Building catalog
+[0m10:04:47.349933 [debug] [ThreadPool]: Acquiring new snowflake connection 'JMAN_FINAL_PROJECT.information_schema'
+[0m10:04:47.375933 [debug] [ThreadPool]: Using snowflake connection "JMAN_FINAL_PROJECT.information_schema"
+[0m10:04:47.376933 [debug] [ThreadPool]: On JMAN_FINAL_PROJECT.information_schema: /* {"app": "dbt", "dbt_version": "1.7.11", "profile_name": "ruth_dbt", "target_name": "dev", "connection_name": "JMAN_FINAL_PROJECT.information_schema"} */
+with tables as (
+            select
+        table_catalog as "table_database",
+        table_schema as "table_schema",
+        table_name as "table_name",
+        case
+            when is_dynamic = 'YES' and table_type = 'BASE TABLE' THEN 'DYNAMIC TABLE'
+            else table_type
+        end as "table_type",
+        comment as "table_comment",
+
+        -- note: this is the _role_ that owns the table
+        table_owner as "table_owner",
+
+        'Clustering Key' as "stats:clustering_key:label",
+        clustering_key as "stats:clustering_key:value",
+        'The key used to cluster this table' as "stats:clustering_key:description",
+        (clustering_key is not null) as "stats:clustering_key:include",
+
+        'Row Count' as "stats:row_count:label",
+        row_count as "stats:row_count:value",
+        'An approximate count of rows in this table' as "stats:row_count:description",
+        (row_count is not null) as "stats:row_count:include",
+
+        'Approximate Size' as "stats:bytes:label",
+        bytes as "stats:bytes:value",
+        'Approximate size of the table as reported by Snowflake' as "stats:bytes:description",
+        (bytes is not null) as "stats:bytes:include",
+
+        'Last Modified' as "stats:last_modified:label",
+        to_varchar(convert_timezone('UTC', last_altered), 'yyyy-mm-dd HH24:MI'||'UTC') as "stats:last_modified:value",
+        'The timestamp for last update/change' as "stats:last_modified:description",
+        (last_altered is not null and table_type='BASE TABLE') as "stats:last_modified:include"
+    from JMAN_FINAL_PROJECT.INFORMATION_SCHEMA.tables
+            where (
+                (
+                    upper("table_schema") = upper('PUBLIC_mart')
+                    and upper("table_name") = upper('user_skill_proficiency')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('PUBLIC')
+                    and upper("table_name") = upper('users')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('PUBLIC_mart')
+                    and upper("table_name") = upper('most_skilled_user')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('PUBLIC_staging')
+                    and upper("table_name") = upper('stg_users')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('PUBLIC_staging')
+                    and upper("table_name") = upper('stg_user_skills')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('PUBLIC_staging')
+                    and upper("table_name") = upper('stg_projects')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('PUBLIC_staging')
+                    and upper("table_name") = upper('stg_user_projects')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('PUBLIC')
+                    and upper("table_name") = upper('user_skills')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('PUBLIC')
+                    and upper("table_name") = upper('projects')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('PUBLIC_mart')
+                    and upper("table_name") = upper('most_experienced_person')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('PUBLIC_mart')
+                    and upper("table_name") = upper('user_most_rejected_skills')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('PUBLIC_mart')
+                    and upper("table_name") = upper('largest_project_teams')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('PUBLIC')
+                    and upper("table_name") = upper('user_projects')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('PUBLIC_mart')
+                    and upper("table_name") = upper('most_common_skill')
+                )
+            )
+        ),
+        columns as (
+            select
+        table_catalog as "table_database",
+        table_schema as "table_schema",
+        table_name as "table_name",
+
+        column_name as "column_name",
+        ordinal_position as "column_index",
+        data_type as "column_type",
+        comment as "column_comment"
+    from JMAN_FINAL_PROJECT.INFORMATION_SCHEMA.columns
+            where (
+                (
+                    upper("table_schema") = upper('PUBLIC_mart')
+                    and upper("table_name") = upper('user_skill_proficiency')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('PUBLIC')
+                    and upper("table_name") = upper('users')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('PUBLIC_mart')
+                    and upper("table_name") = upper('most_skilled_user')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('PUBLIC_staging')
+                    and upper("table_name") = upper('stg_users')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('PUBLIC_staging')
+                    and upper("table_name") = upper('stg_user_skills')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('PUBLIC_staging')
+                    and upper("table_name") = upper('stg_projects')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('PUBLIC_staging')
+                    and upper("table_name") = upper('stg_user_projects')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('PUBLIC')
+                    and upper("table_name") = upper('user_skills')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('PUBLIC')
+                    and upper("table_name") = upper('projects')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('PUBLIC_mart')
+                    and upper("table_name") = upper('most_experienced_person')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('PUBLIC_mart')
+                    and upper("table_name") = upper('user_most_rejected_skills')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('PUBLIC_mart')
+                    and upper("table_name") = upper('largest_project_teams')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('PUBLIC')
+                    and upper("table_name") = upper('user_projects')
+                )
+             or 
+                (
+                    upper("table_schema") = upper('PUBLIC_mart')
+                    and upper("table_name") = upper('most_common_skill')
+                )
+            )
+        )
+        select *
+    from tables
+    join columns using ("table_database", "table_schema", "table_name")
+    order by "column_index"
+[0m10:04:47.377933 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:04:57.236670 [debug] [ThreadPool]: SQL status: SUCCESS 91 in 10.0 seconds
+[0m10:04:57.261670 [debug] [ThreadPool]: On JMAN_FINAL_PROJECT.information_schema: Close
+[0m10:04:57.371672 [info ] [MainThread]: Catalog written to C:\Users\RuthvikS\Downloads\ruthvik_dbt\ruthvik_dbt\Jman_Final_Project_DBT\ruth_dbt\target\catalog.json
+[0m10:04:57.375671 [debug] [MainThread]: Command `dbt docs generate` succeeded at 10:04:57.375671 after 24.23 seconds
+[0m10:04:57.376672 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m10:04:57.377672 [debug] [MainThread]: Connection 'JMAN_FINAL_PROJECT.information_schema' was properly closed.
+[0m10:04:57.378673 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001517127E170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001517C2E6F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001517C64C250>]}
+[0m10:04:57.378673 [debug] [MainThread]: Flushing usage events
+[0m10:05:15.664238 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024D6C572680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024D6EDEB550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024D6EDEA200>]}
+
+
+============================== 10:05:15.672238 | 7e747988-68c7-416a-902e-eff9f6de705a ==============================
+[0m10:05:15.672238 [info ] [MainThread]: Running with dbt=1.7.11
+[0m10:05:15.674240 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\RuthvikS\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\RuthvikS\\Downloads\\ruthvik_dbt\\ruthvik_dbt\\Jman_Final_Project_DBT\\ruth_dbt\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt docs serve', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m10:05:19.594461 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7e747988-68c7-416a-902e-eff9f6de705a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024D6EDE96C0>]}
+[0m10:05:19.969459 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7e747988-68c7-416a-902e-eff9f6de705a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024D774FA440>]}
+[0m10:06:06.335791 [error] [MainThread]: Encountered an error:
+
+[0m10:06:06.417792 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\RuthvikS\AppData\Local\Programs\Python\Python310\lib\site-packages\dbt\cli\requires.py", line 91, in wrapper
+    result, success = func(*args, **kwargs)
+  File "C:\Users\RuthvikS\AppData\Local\Programs\Python\Python310\lib\site-packages\dbt\cli\requires.py", line 76, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\RuthvikS\AppData\Local\Programs\Python\Python310\lib\site-packages\dbt\cli\requires.py", line 169, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\RuthvikS\AppData\Local\Programs\Python\Python310\lib\site-packages\dbt\cli\requires.py", line 198, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\RuthvikS\AppData\Local\Programs\Python\Python310\lib\site-packages\dbt\cli\requires.py", line 245, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\RuthvikS\AppData\Local\Programs\Python\Python310\lib\site-packages\dbt\cli\main.py", line 324, in docs_serve
+    results = task.run()
+  File "C:\Users\RuthvikS\AppData\Local\Programs\Python\Python310\lib\site-packages\dbt\task\serve.py", line 28, in run
+    httpd.serve_forever()
+  File "C:\Users\RuthvikS\AppData\Local\Programs\Python\Python310\lib\socketserver.py", line 232, in serve_forever
+    ready = selector.select(poll_interval)
+  File "C:\Users\RuthvikS\AppData\Local\Programs\Python\Python310\lib\selectors.py", line 324, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+  File "C:\Users\RuthvikS\AppData\Local\Programs\Python\Python310\lib\selectors.py", line 315, in _select
+    r, w, x = select.select(r, w, w, timeout)
+KeyboardInterrupt
+
+[0m10:06:06.422791 [debug] [MainThread]: Command `dbt docs serve` failed at 10:06:06.422791 after 55.23 seconds
+[0m10:06:06.423792 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024D6C572680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024D776C0B20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024D776C0E80>]}
+[0m10:06:06.424792 [debug] [MainThread]: Flushing usage events
